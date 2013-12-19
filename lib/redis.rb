@@ -2466,7 +2466,7 @@ private
       if (inf = str.match(/^(-)?inf/i))
         (inf[1] ? -1.0 : 1.0) / 0.0
       else
-        Float(str)
+        str.to_f
       end
     }
   end
